@@ -1,5 +1,12 @@
-# Prueba de Programación  
-## UnoDosTres[T]
+# Prueba de Programación - UnoDosTres[T]
+
+## Requerimientos
+
+- php ^7.1+
+- composer
+- git (opcional)
+
+## UnoDosTres
 
 A continuación se resuelven los siguientes problemas en el archivo `src/helpers.php` con su correspondiente prueba de test en `test/HelpersTest.php`. Los problemas resueltos son los siguientes:
 
