@@ -63,6 +63,41 @@ if(!function_exists('three'))
     }
 }
 
+/**
+ *
+ */
+if(!function_exists('balanced_parentheses'))
+{
+    /**
+     * @param int $n
+     * @return string
+     */
+    function balanced_parentheses(int $n) : string
+    {
+        $start_balanced = '';
+        $end_balanced = '';
+
+        $start = '';
+        $end = '';
+
+        if($n > 0)
+        {
+            for ($i = 0; $i < $n; $i++)
+            {
+                $start_balanced .= (START_PARENTHESES . END_PARENTHESES);
+                if($i >= 1)
+                {
+                    $start .= START_PARENTHESES;
+                    $end .= END_PARENTHESES;
+                }
+            }
+            $end_balanced .= $start . $end;
+        }
+
+        return $start_balanced . (empty($end_balanced) ? '' : (' , ' . $end_balanced));
+    }
+}
+
 if(!function_exists('printNSubString'))
 {
     /**
@@ -128,41 +163,6 @@ if(!function_exists('printSubString'))
         }
 
         return $combinations;
-    }
-}
-
-/**
- *
- */
-if(!function_exists('balanced_parentheses'))
-{
-    /**
-     * @param int $n
-     * @return string
-     */
-    function balanced_parentheses(int $n) : string
-    {
-        $start_balanced = '';
-        $end_balanced = '';
-
-        $start = '';
-        $end = '';
-
-        if($n > 0)
-        {
-            for ($i = 0; $i < $n; $i++)
-            {
-                $start_balanced .= (START_PARENTHESES . END_PARENTHESES);
-                if($i >= 1)
-                {
-                    $start .= START_PARENTHESES;
-                    $end .= END_PARENTHESES;
-                }
-            }
-            $end_balanced .= $start . $end;
-        }
-
-        return $start_balanced . (empty($end_balanced) ? '' : (' , ' . $end_balanced));
     }
 }
 

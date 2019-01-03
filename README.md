@@ -24,5 +24,7 @@ A continuación en el archivo `src/helpers.php` encontrara los ejercicios 1 - 3.
 
 | Ejercicio | Nombre de Función |
 |-----------|-------------------|
-| 1 | printNSubString |
-| 2 | balanced_parentheses 
+| 1 | balanced_parentheses 
+| 2 | printNSubString |
+| 3 | super_digit | 
+
