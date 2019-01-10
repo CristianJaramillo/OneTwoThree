@@ -3,6 +3,8 @@
   "description": "Prueba de Programación UnoDosTres",
   "keywords": ["test", "recursive", "functions"],
   "license": "MIT",
+  "version": "0.0.1",
+  "type": "library",
   "authors": [
     {
       "name": "Cristian Jaramillo",

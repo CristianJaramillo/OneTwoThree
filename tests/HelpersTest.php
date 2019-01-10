@@ -39,6 +39,7 @@ final class HelpersTest extends TestCase
      */
     public function  testThree() : void
     {
+        echo three(0) . "\n";
         echo three(1) . "\n";
         echo three(3) . "\n";
         echo three(9) . "\n";
@@ -61,6 +62,8 @@ final class HelpersTest extends TestCase
     {
         echo balanced_parentheses(1) . "\n";
         echo balanced_parentheses(2) . "\n";
+        echo balanced_parentheses(3) . "\n";
+        echo balanced_parentheses(4) . "\n";
     }
 
     /**
@@ -69,7 +72,8 @@ final class HelpersTest extends TestCase
     public function testSuperDigit() : void
     {
         echo super_digit(9875) . "\n";
-        echo super_digit(148148148) . "\n";
+        $numberRepeat = (int) str_repeat(strval(148), 3);
+        echo super_digit($numberRepeat) . "\n";
     }
 
 }
